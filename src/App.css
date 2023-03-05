@@ -1,38 +1,82 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-page{
+  height: 100vh;
+  display: grid;
+  place-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.button{
+  padding: 20px 40px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
   color: white;
+  background-color: rgb(114, 214, 114);
+ font-weight: 600;
+}
+.registerPage,.login-page{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+#id,#password{
+ 
+  background-color: rgb(205, 205, 205);
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+}
+#textarea{
+  width: 300px;
+  height: 150px;
+  border: none;
+  background-color: rgb(205, 205, 205);
+  padding: 20px 40px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.createPage{
+  
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr .5fr;
+ 
+}
+.createSide{
+  display: grid;
+  place-content: center;
+}
+.fileSide{
+  padding: 10px;
+}
+.createBtn{
+  padding: 20px 40px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  color: white;
+  background-color: rgb(27, 36, 135);
+ font-weight: 600;
+}
+.file-box{
+  padding: 10px 20px;
+  width: 200px;
+  background-color: rgb(69, 69, 235);
+  border-radius: 10px;
+  color: white;
+  display: grid;
+  place-items: start;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(max-width: 564px){
+  .createPage{
+    display: grid;
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
+  #textarea{
+    width: 200px;
   }
 }
